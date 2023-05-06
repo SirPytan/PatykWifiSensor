@@ -72,7 +72,9 @@
     <UseDebugLibraries>true</UseDebugLibraries>
   </PropertyGroup>
   <ImportGroup Label="ExtensionSettings" />
-  <ImportGroup Label="Shared" />
+  <ImportGroup Label="Shared">
+    <Import Project="C:\Users\danie\Documents\Arduino\libraries\EasyWiFi\EasyWiFi-1.4.2.vcxitems" Label="Shared" />
+  </ImportGroup>
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
     <LinuxIncludePath>c:\visualmicro\ignore</LinuxIncludePath>
@@ -84,7 +86,6 @@
       <FileType>CppCode</FileType>
       <DeploymentContent>true</DeploymentContent>
     </ClCompile>
-    <ClCompile Include="src\EasyWiFi.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\arduino folders read me.txt">
@@ -94,21 +95,20 @@
     <ProjectCapability Include="VisualMicro" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\EasyWiFi.h" />
     <ClInclude Include="__vm\.PatykWifiSensor.vsarduino.h" />
   </ItemGroup>
   <PropertyGroup>
     <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\CMSIS\\4.5.0\CMSIS\Include;C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\CMSIS-Atmel\\1.2.0\CMSIS\Device\ATMEL;C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\samd\\1.8.13\\cores\\arduino\api\deprecated;C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\samd\\1.8.13\\cores\\arduino\api\deprecated-avr-comp;C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\samd\\1.8.13\\cores\\arduino;C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\samd\\1.8.13\\variants\\nano_33_iot;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1\arm-none-eabi\thumb\v6-m;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1\backward;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\lib\gcc\arm-none-eabi\7.2.1\include;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\lib\gcc\arm-none-eabi\7.2.1\include-fixed;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include;C:\Users\danie\Documents\Arduino\libraries\WiFiNINA\src;C:\Users\danie\Documents\Arduino\libraries\WiFiNINA\src\utility</IncludePath>
+    <IncludePath>C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\CMSIS\\4.5.0\CMSIS\Include;C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\CMSIS-Atmel\\1.2.0\CMSIS\Device\ATMEL;C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\samd\\1.8.13\\cores\\arduino\api\deprecated;C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\samd\\1.8.13\\cores\\arduino\api\deprecated-avr-comp;C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\samd\\1.8.13\\cores\\arduino;C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\samd\\1.8.13\\variants\\nano_33_iot;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1\arm-none-eabi\thumb\v6-m;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1\backward;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\lib\gcc\arm-none-eabi\7.2.1\include;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\lib\gcc\arm-none-eabi\7.2.1\include-fixed;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include;C:\Users\danie\Documents\Arduino\libraries\WiFiNINA\src;C:\Users\danie\Documents\Arduino\libraries\WiFiNINA\src\utility;C:\Users\danie\Documents\Arduino\libraries\EasyWiFi\src</IncludePath>
     <RemoteCCompileToolExe>C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\bin\arm-none-eabi-g++</RemoteCCompileToolExe>
     <RemoteCppCompileToolExe>C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\bin\arm-none-eabi-g++</RemoteCppCompileToolExe>
     <ValidateArchitecture>false</ValidateArchitecture>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\CMSIS\\4.5.0\CMSIS\Include;C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\CMSIS-Atmel\\1.2.0\CMSIS\Device\ATMEL;C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\samd\\1.8.13\\cores\\arduino\api\deprecated;C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\samd\\1.8.13\\cores\\arduino\api\deprecated-avr-comp;C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\samd\\1.8.13\\cores\\arduino;C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\samd\\1.8.13\\variants\\nano_33_iot;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1\arm-none-eabi\thumb\v6-m;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1\backward;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\lib\gcc\arm-none-eabi\7.2.1\include;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\lib\gcc\arm-none-eabi\7.2.1\include-fixed;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include;C:\Users\danie\Documents\Arduino\libraries\WiFiNINA\src;C:\Users\danie\Documents\Arduino\libraries\WiFiNINA\src\utility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\CMSIS\\4.5.0\CMSIS\Include;C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\CMSIS-Atmel\\1.2.0\CMSIS\Device\ATMEL;C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\samd\\1.8.13\\cores\\arduino\api\deprecated;C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\samd\\1.8.13\\cores\\arduino\api\deprecated-avr-comp;C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\samd\\1.8.13\\cores\\arduino;C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\samd\\1.8.13\\variants\\nano_33_iot;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1\arm-none-eabi\thumb\v6-m;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1\backward;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\lib\gcc\arm-none-eabi\7.2.1\include;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\lib\gcc\arm-none-eabi\7.2.1\include-fixed;c:\users\danie\appdata\local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include;C:\Users\danie\Documents\Arduino\libraries\WiFiNINA\src;C:\Users\danie\Documents\Arduino\libraries\WiFiNINA\src\utility;C:\Users\danie\Documents\Arduino\libraries\EasyWiFi\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <GccToolChain>C:\\Users\\danie\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\bin\arm-none-eabi-g++</GccToolChain>
       <CppLanguageStandard>gnu++11</CppLanguageStandard>
       <CLanguageStandard>gnu11</CLanguageStandard>
